@@ -119,7 +119,7 @@ jobs:
           echo -e "\nCONFIG_ALL=y" >> $OPENWRT_ROOT_PATH/.config
           echo -e "\nCONFIG_ALL_NONSHARED=y" >> $OPENWRT_ROOT_PATH/.config
           cd $OPENWRT_ROOT_PATH
-          sed -i 's/KERNEL_PATCHVER:=6.1/KERNEL_PATCHVER:=6.1/g' target/linux/x86/Makefile
+          sed -i 's/KERNEL_PATCHVER:=6.1/KERNEL_PATCHVER:=6.1.86/g' target/linux/x86/Makefile
           make defconfig > /dev/null 2>&1
 
       - name: Generate Variables
